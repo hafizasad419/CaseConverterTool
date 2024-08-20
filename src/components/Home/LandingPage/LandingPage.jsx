@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Clear, PrimaryButton } from '../../../utils'
+import { Clear, CopyToClipboard, DownloadText, PrimaryButton } from '../../../utils'
 
 
 
@@ -43,29 +43,11 @@ function LandingPage() {
         setText(newText);
     };
 
-    const handleDownload = () => {
-        const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'text.txt';
-        a.click();
-        URL.revokeObjectURL(url);
-    };
-
-    const handleCopy = () => {
-        navigator.clipboard.writeText(text);
-    };
-
-    const handleClear = () => {
-        setText('');
-    };
-
 
     return (
         <div>
 
-<h1 className='text center text-2xl my-4 md:text-5xl text-customGray text-center font-bold'>Convert, Whatever❤!</h1>
+            <h1 className='text center text-2xl my-4 md:text-5xl text-customGray text-center font-bold'>Convert, Whatever❤!</h1>
 
             <div className="flex flex-col items-center p-4">
                 <textarea
@@ -82,10 +64,9 @@ function LandingPage() {
                     <PrimaryButton onClick={() => transformText('alternating')}>aLtErNaTiNg cAsE</PrimaryButton>
                     <PrimaryButton onClick={() => transformText('title')}>Title Case</PrimaryButton>
                     <PrimaryButton onClick={() => transformText('inverse')}>InVeRsE CaSe</PrimaryButton>
-                    {/* <DownloadButton onClick={handleDownload} />
-                    <CopyButton onClick={handleCopy} /> */}
-                    {/* <ClearButton onClick={handleClear} /> */}
-                    <Clear setText={setText}/>
+                    <DownloadText text={text}/>
+                    <CopyToClipboard text={text} />
+                    <Clear setText={setText} />
                 </div>
             </div>
         </div>
