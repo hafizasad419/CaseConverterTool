@@ -7,5 +7,4 @@ export {
     Clear,
     DownloadText,
     CopyToClipboad,
-
 }
