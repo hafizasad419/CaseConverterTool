@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { DownloadText, CopyToClipboard } from '../../../utils'; // Adjust the import paths as needed
 
-function TextModificationLayout({ transformFunction, title, description }) {
+function TextModificationLayout({ transformFunction, title, description, style }) {
     const [inputText, setInputText] = useState('');
     const [outputText, setOutputText] = useState('');
 
@@ -44,6 +44,7 @@ function TextModificationLayout({ transformFunction, title, description }) {
                 {/* Right Side: Output Area */}
                 <div className="w-full lg:w-1/2 flex flex-col">
                     <textarea
+                        style={style}
                         value={outputText}
                         readOnly
                         className="w-full h-32 p-2 mb-2 border border-gray-300 rounded-lg resize-none bg-gray-100"

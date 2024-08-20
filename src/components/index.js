@@ -5,7 +5,7 @@ import Layout from "./Layout/Layout";
 import LandingPage from "./Home/LandingPage/LandingPage";
 
 import TextModificationLayout from "./Features/TextModification/TextModificationLayout";
-import BigTextConverter from "./Features/TextModification/BigtextConverter";
+import BigTextConverter from "./Features/TextModification/BigTextConverter";
 import BubbleTextGenerator from "./Features/TextModification/BubbleTextGenerator";
 import BoldTextGenerator from "./Features/TextModification/BoldTextGenerator";
 import CursedTextTool from "./Features/TextModification/CursedTextTool";
