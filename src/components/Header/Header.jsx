@@ -42,7 +42,6 @@ const navbarItems = [
     {
         name: 'Code & Data Translation',
         services: [
-            { name: 'Code & Data Translation', route: '/code-data-translation/code-data-translation' },
             { name: 'Binary Code Translator', route: '/code-data-translation/binary-code-translator' },
             { name: 'CSV to JSON Converter', route: '/code-data-translation/csv-to-json-converter' },
             { name: 'Hex to Text Converter', route: '/code-data-translation/hex-to-text-converter' },

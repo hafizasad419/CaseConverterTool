@@ -14,6 +14,36 @@ import DuplicateLineRemover from "./Features/TextModification/DuplicateLineRemov
 import MirrorTextGenerator from "./Features/TextModification/MirrorTextGenerator";
 import ItalicTextConverter from "./Features/TextModification/ItalicTextConverter";
 import InvisibleTextGenerator from "./Features/TextModification/InvisibleTextGenerator";
+import PhoneticSpellingGenerator from "./Features/TextModification/PhoneticSpellingGenerator";
+import PigLatinTranslator from "./Features/TextModification/PigLatinTranslator";
+import PlainTextConverter from "./Features/TextModification/PlainTextConverter";
+import RemoveTextFormatting from "./Features/TextModification/RemoveTextFormatting";
+import ReverseTextGenerator from "./Features/TextModification/ReverseTextGenerator";
+import SentenceCaseConverter from "./Features/TextModification/SentenceCaseConverter";
+import SmallTextGenerator from "./Features/TextModification/SmallTextGenerator";
+import StackedTextGenerator from "./Features/TextModification/StackedTextGenerator";
+import RemoveLineBreaks from "./Features/TextModification/RemoveLineBreaks";
+import StrikethroughTextGenerator from "./Features/TextModification/StrikethroughTextGenerator";
+import SuperscriptGenerator from "./Features/TextModification/SuperscriptGenerator";
+import TitleCaseConverter from "./Features/TextModification/TitleCaseConverter";
+import UnderlineTextGenerator from "./Features/TextModification/UnderlineTextGenerator";
+import UnicodeTextConverter from "./Features/TextModification/UnicodeTextConverter";
+import UpsideDownTextGenerator from "./Features/TextModification/UpsideDownTextGenerator";
+import WhitespaceRemover from "./Features/TextModification/WhitespaceRemover";
+import WideTextGenerator from "./Features/TextModification/WideTextGenerator";
+import WingdingsConverter from "./Features/TextModification/WingdingsConverter";
+import ZalgoGlitchTextGenerator from "./Features/TextModification/ZalgoGlitchTextGenerator";
+import BinaryCodeTranslator from "./Features/CodeAndDataTranslation/BinaryCodeTranslator";
+import CsvToJsonConverter from "./Features/CodeAndDataTranslation/CsvToJsonConverter";
+import HexToTextConverter from "./Features/CodeAndDataTranslation/HexToTextConverter";
+import JsonStringifyTextGenerator from "./Features/CodeAndDataTranslation/JsonStringifyTextGenerator";
+import MorseCodeTranslator from "./Features/CodeAndDataTranslation/MorseCodeTranslator";
+import NumberSorter from "./Features/CodeAndDataTranslation/NumberSorter";
+import ROT13EncoderDecoder from "./Features/CodeAndDataTranslation/ROT13EncoderDecoder";
+import SlugifyURLGenerator from "./Features/CodeAndDataTranslation/SlugifyURLGenerator";
+import URLEncodeDecode from "./Features/CodeAndDataTranslation/URLEncodeDecode";
+import UTF8EncoderDecoder from "./Features/CodeAndDataTranslation/UTF8EncoderDecoder";
+import UTMBuilderGenerator from "./Features/CodeAndDataTranslation/UTMBuilderGenerator";
 
 
 export {
@@ -25,7 +55,7 @@ export {
 
 
 
-
+// text modification
     TextModificationLayout,
     BubbleTextGenerator,
     BoldTextGenerator,
@@ -35,7 +65,39 @@ export {
     DuplicateLineRemover,
     MirrorTextGenerator,
     ItalicTextConverter,
-    InvisibleTextGenerator
+    InvisibleTextGenerator,
+    PlainTextConverter,
+    PhoneticSpellingGenerator,
+    PigLatinTranslator,
+    RemoveLineBreaks,
+    RemoveTextFormatting,
+    ReverseTextGenerator,
+    SentenceCaseConverter,
+    SmallTextGenerator,
+    StackedTextGenerator,
+    UpsideDownTextGenerator,
+    UnicodeTextConverter,
+    UnderlineTextGenerator,
+    TitleCaseConverter,
+    SuperscriptGenerator,
+    StrikethroughTextGenerator,
+    WhitespaceRemover,
+    WideTextGenerator,
+    WingdingsConverter,
+    ZalgoGlitchTextGenerator,
 
-    
+
+// code and data translation
+    BinaryCodeTranslator,
+    CsvToJsonConverter,
+    HexToTextConverter,
+    JsonStringifyTextGenerator,
+    NumberSorter,
+    MorseCodeTranslator,
+    ROT13EncoderDecoder,
+    URLEncodeDecode,
+    SlugifyURLGenerator,
+    UTMBuilderGenerator,
+    UTF8EncoderDecoder,
 }
+
