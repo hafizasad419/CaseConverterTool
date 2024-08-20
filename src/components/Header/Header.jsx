@@ -5,10 +5,7 @@ import { NavLink } from 'react-router-dom'; // Import NavLink for routing
 
 // Array of navbar items with their corresponding services and routes
 const navbarItems = [
-    {
-        name: 'Convert Case',
 
-    },
     {
         name: 'Text Modification/Formatting',
         services: [
@@ -105,31 +102,31 @@ const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const toggleDropdown = (index) => {
-        clearTimeout(dropdownTimer); // Clear the timer if user hovers back quickly
+        clearTimeout(dropdownTimer);
         setActiveDropdown(index);
     };
 
     const closeDropdownWithDelay = () => {
         const timer = setTimeout(() => {
             setActiveDropdown(null);
-        }, 700); // Set a delay before closing the dropdown
+        }, 700);
         setDropdownTimer(timer);
     };
 
     useEffect(() => {
         return () => {
-            clearTimeout(dropdownTimer); // Clear timer when component unmounts
+            clearTimeout(dropdownTimer);
         };
     }, [dropdownTimer]);
 
     return (
-        <nav className="bg-gradient-to-r from-[#313131] to-[#515151] text-white p-4 flex justify-between md:justify-evenly items-center md:py-8">
+        <nav className="bg-gradient-to-r from-[#313131] to-[#515151] text-white p-4 flex justify-between md:justify-evenly items-center py-8">
             <div className="text-2xl font-bold">
                 Syed Alam
             </div>
 
             {/* Hamburger icon for mobile */}
-            <div className="block md:hidden fixed top-4 right-4 z-20">
+            <div className="block md:hidden fixed top-8 right-4 z-20">
                 <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="focus:outline-none">
                     {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
                 </button>
@@ -137,6 +134,10 @@ const Header = () => {
 
             {/* Navbar items */}
             <div className={`flex-col md:flex-row md:flex gap-4 items-center ${isMobileMenuOpen ? 'flex' : 'hidden'}`}>
+                <NavLink to={"/"}>
+                    Convert Case
+                </NavLink>
+
                 {navbarItems.map((item, index) => (
                     <div
                         key={index}
@@ -144,7 +145,8 @@ const Header = () => {
                         onMouseEnter={() => toggleDropdown(index)}
                         onMouseLeave={closeDropdownWithDelay}
                     >
-                        <button className="flex items-center gap-1 focus:outline-none">
+
+                        <button className="flex items-center gap-1 focus:outline-none hover:scale-110 duration-500">
                             {item.name} {item.services && <FaChevronDown size={12} />}
                         </button>
                         {activeDropdown === index && item.services && (
@@ -152,9 +154,9 @@ const Header = () => {
                                 initial={{ opacity: 0, y: -10 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, y: -10 }}
-                                className="absolute left-0 top-full mt-2 bg-white text-black rounded-lg shadow-lg z-10"
+                                className="absolute right-0 top-full mt-2 bg-white text-black rounded-lg shadow-lg z-10 min-w-[50vw] md:min-w-[30vw]"
                             >
-                                <ul className="py-2">
+                                <ul className="py-2 grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-2 text-sm font-semibold overflow-y-auto max-h-[80vh] p-2 ">
                                     {item.services.map((service, i) => (
                                         <li key={i} className="px-4 py-2 hover:bg-gray-200 cursor-pointer">
                                             <NavLink to={service.route} className="block w-full h-full">
