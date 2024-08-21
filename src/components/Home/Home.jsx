@@ -1,12 +1,12 @@
 import React from 'react'
-import { LandingPage } from '../'
+import { LandingPage, ServiceCards } from '../'
 
 function Home() {
     return (
         <div>
 
             <LandingPage />
-
+            <ServiceCards />
         </div>
     )
 }

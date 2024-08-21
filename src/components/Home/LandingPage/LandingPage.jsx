@@ -45,9 +45,9 @@ function LandingPage() {
 
 
     return (
-        <div>
+        <div className='my-28'>
 
-            <h1 className='text center text-2xl my-4 md:text-5xl text-customGray text-center font-bold'>Convert, Whatever❤!</h1>
+            <h1 className='text center text-4xl my-4 md:text-6xl text-customGray text-center font-bold'>Convert, Whatever❤!</h1>
 
             <div className="flex flex-col items-center p-4">
                 <textarea

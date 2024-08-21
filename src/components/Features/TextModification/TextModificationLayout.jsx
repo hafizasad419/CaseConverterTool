@@ -17,7 +17,7 @@ function TextModificationLayout({ transformFunction, title, description, style }
     const lineCount = inputText.split(/\r\n|\r|\n/).length;
 
     return (
-        <section className='my-8'>
+        <section className='my-28'>
             {/* title and description */}
             <div className='px-4'>
                 <h1 className='text-center text-4xl my-4 md:text-6xl text-customGray font-bold'>{title}</h1>

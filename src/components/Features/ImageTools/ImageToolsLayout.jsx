@@ -34,7 +34,7 @@ function ImageToolsLayout({ title, description, processImage, downloadLabel }) {
     };
 
     return (
-        <section className="my-8">
+        <section className="my-28">
             <div className="px-4">
                 <h1 className="text-center text-4xl my-4 md:text-6xl text-customGray font-bold">{title}</h1>
                 <p className="text-sm md:text-lg text-center">{description}</p>

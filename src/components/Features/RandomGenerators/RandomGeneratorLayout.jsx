@@ -12,7 +12,7 @@ const RandomGeneratorLayout = ({ title, description, generateContent, downloadLa
     };
 
     return (
-        <div className="my-8 px-4 md:px-8">
+        <div className="my-28 px-4 md:px-8">
             <h1 className="text-center text-4xl my-4 md:text-6xl text-customGray font-bold">{title}</h1>
             <p className="text-center text-sm md:text-lg md:max-w-[60vw] mx-auto">{description}</p>
             <div className="flex flex-col items-center bg-white rounded-lg shadow-md p-6 mt-8">

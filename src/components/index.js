@@ -70,6 +70,8 @@ import RomanNumeralDateConverter from "./Features/MiscTools/RomanNumeralDateConv
 import SortWordsAlphabetically from "./Features/MiscTools/SortWordsAlphabetically";
 import TextReplacementTool from "./Features/MiscTools/TextReplacementTool";
 import OnlineNotepad from "./Features/MiscTools/OnlineNotepad";
+import ServiceCardLayout from "./Home/ServiceCardLayout/ServiceCardLayout";
+import ServiceCards from "./Home/ServiceCards/ServiceCards";
 export {
     Home,
     Header,
@@ -157,5 +159,10 @@ export {
     TextReplacementTool,
     OnlineNotepad,
 
+
+    //service cards
+    ServiceCardLayout,
+    ServiceCards,
     
 }
+
