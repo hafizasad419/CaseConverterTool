@@ -4,10 +4,20 @@ import { Clear, CopyToClipboard, DownloadText, PrimaryButton } from '../../../ut
 
 
 function LandingPage() {
+
     const [text, setText] = useState('');
     const handleTextChange = (event) => {
         setText(event.target.value);
     };
+
+
+
+    // Text statistics
+    const charCount = text.length;
+    const wordCount = text.trim().split(/\s+/).length;
+    const sentenceCount = (text.match(/[^.!?]+[.!?]+[\])'"`’”]*|.+/g) || []).length;
+    const lineCount = text.split(/\r\n|\r|\n/).length;
+
 
     const transformText = (transformType) => {
         let newText = '';
@@ -56,6 +66,12 @@ function LandingPage() {
                     className="w-full lg:w-[80vw] h-32 p-2 mb-4 border border-gray-300 rounded-lg resize-none"
                     placeholder="Type or paste your text here..."
                 />
+
+                <div className="text-sm text-gray-600 mb-4">
+                    Character Count: {charCount} | Word Count: {wordCount} | Sentence Count: {sentenceCount} | Line Count: {lineCount}
+                </div>
+
+
                 <div className="flex flex-wrap gap-2 justify-center mb-4">
                     <PrimaryButton onClick={() => transformText('sentence')}>Sentence case</PrimaryButton>
                     <PrimaryButton onClick={() => transformText('lower')}>lower case</PrimaryButton>
@@ -64,7 +80,7 @@ function LandingPage() {
                     <PrimaryButton onClick={() => transformText('alternating')}>aLtErNaTiNg cAsE</PrimaryButton>
                     <PrimaryButton onClick={() => transformText('title')}>Title Case</PrimaryButton>
                     <PrimaryButton onClick={() => transformText('inverse')}>InVeRsE CaSe</PrimaryButton>
-                    <DownloadText text={text}/>
+                    <DownloadText text={text} />
                     <CopyToClipboard text={text} />
                     <Clear setText={setText} />
                 </div>
