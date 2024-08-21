@@ -20,8 +20,8 @@ function TextModificationLayout({ transformFunction, title, description, style }
         <section className='my-8'>
             {/* title and description */}
             <div className='px-4'>
-                <h1 className='text center text-4xl my-4 md:text-6xl text-customGray font-bold'>{title}</h1>
-                <p className='text-sm md:text-lg md:max-w-[60vw]'>{description}</p>
+                <h1 className='text-center text-4xl my-4 md:text-6xl text-customGray font-bold'>{title}</h1>
+                <p className='text-center text-sm md:text-lg'>{description}</p>
 
             </div>
 

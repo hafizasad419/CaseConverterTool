@@ -1,7 +1,7 @@
 import React from 'react'
 import { PrimaryButton } from '../'
 
-function DownloadText({text}) {
+function DownloadText({ text }) {
 
   const handleDownload = () => {
     const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });

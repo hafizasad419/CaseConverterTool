@@ -5,7 +5,7 @@ import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route, }
 import {
   Home, Layout,
 
-
+  // text modification tools
   BigTextConverter, BubbleTextGenerator, BoldTextGenerator, FacebookFontGenerator, DuplicateLineRemover, CursedTextTool, MirrorTextGenerator, ItalicTextConverter, InvisibleTextGenerator, PhoneticSpellingGenerator, PigLatinTranslator, PlainTextConverter, RemoveLineBreaks,
   RemoveTextFormatting,
   ReverseTextGenerator,
@@ -23,7 +23,7 @@ import {
   WingdingsConverter,
   ZalgoGlitchTextGenerator,
 
-
+  // code and data translation
   BinaryCodeTranslator,
   CsvToJsonConverter,
   HexToTextConverter,
@@ -36,6 +36,35 @@ import {
   UTMBuilderGenerator,
   UTF8EncoderDecoder,
 
+  // Image tools
+  AsciiArtGenerator,
+  ImageToTextConverter,
+  JPGToPNGConverter,
+  JPGToWebPConverter,
+  PNGToJPGConverter,
+  PNGToWebPConverter,
+  SVGToPNGConverter,
+  WebPToJPGConverter,
+  WebPToPNGConverter,
+
+
+  // Random generators
+
+  RandomChoiceGenerator,
+  RandomDateGenerator,
+  RandomIPGenerator,
+  RandomNumberGenerator,
+  RandomMonthGenerator,
+  RandomLetterGenerator,
+  StrongPasswordGenerator,
+
+  // Misc Tools
+  NATOPhoneticAlphabetTranslator,
+  OnlineSentenceCounter,
+  RepeatTextGenerator,
+  RomanNumeralDateConverter,
+  SortWordsAlphabetically,
+  TextReplacementTool,
 } from './components'
 
 
@@ -48,7 +77,7 @@ const router = createBrowserRouter(
 
 
 
-      {/* Text Converter Routes */}
+      {/* Text Modification Routes */}
       <Route path="/convert-case/big-text-converter"
         element={<BigTextConverter />} />
       <Route path="/convert-case/bold-text-generator"
@@ -94,6 +123,40 @@ const router = createBrowserRouter(
       <Route path="/code-data-translation/url-encode-and-decode" element={<URLEncodeDecode />} />
       <Route path="/code-data-translation/utf-8-encoder-decoder" element={<UTF8EncoderDecoder />} />
       <Route path="/code-data-translation/utm-builder-generator" element={<UTMBuilderGenerator />} />
+
+      {/* Image Tools */}
+
+      <Route path="/image-tools/ascii-art-generator" element={<AsciiArtGenerator />} />
+      <Route path="/image-tools/image-to-text-converter" element={<ImageToTextConverter />} />
+      <Route path="/image-tools/jpg-to-png-converter" element={<JPGToPNGConverter />} />
+      <Route path="/image-tools/jpg-to-webp-converter" element={<JPGToWebPConverter />} />
+      <Route path="/image-tools/png-to-jpg-converter" element={<PNGToJPGConverter />} />
+      <Route path="/image-tools/png-to-webp-converter" element={<PNGToWebPConverter />} />
+      <Route path="/image-tools/svg-to-png-converter" element={<SVGToPNGConverter />} />
+      <Route path="/image-tools/webp-to-jpg-converter" element={<WebPToJPGConverter />} />
+      <Route path="/image-tools/webp-to-png-converter" element={<WebPToPNGConverter />} />
+
+
+      {/* Random Generators */}
+      <Route path="/random-generators/random-choice-generator" element={<RandomChoiceGenerator />} />
+
+      <Route path="/random-generators/random-date-generator" element={<RandomDateGenerator />} />
+      <Route path="/random-generators/random-ip-address-generator" element={<RandomIPGenerator />} />
+      <Route path="/random-generators/random-letter-generator" element={<RandomLetterGenerator />} />
+      <Route path="/random-generators/random-month-generator" element={<RandomMonthGenerator />} />
+      <Route path="/random-generators/random-number-generator" element={<RandomNumberGenerator />} />
+      <Route path="/random-generators/strong-password-generator" element={<StrongPasswordGenerator />} />
+
+
+
+
+      {/* Misc Tools */}
+      <Route path="misc-tools/nato-phonetic-alphabet-translator" element={<NATOPhoneticAlphabetTranslator />} />
+      <Route path="misc-tools/online-sentence-counter" element={<OnlineSentenceCounter />} />
+      <Route path="misc-tools/repeat-text-generator" element={<RepeatTextGenerator />} />
+      <Route path="misc-tools/roman-numeral-date-converter" element={<RomanNumeralDateConverter />} />
+      <Route path="misc-tools/sort-words-alphabetically" element={<SortWordsAlphabetically />} />
+      <Route path="misc-tools/text-replacement-tool" element={<TextReplacementTool />} />
 
     </Route>
   )

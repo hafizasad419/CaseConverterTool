@@ -46,6 +46,29 @@ import UTF8EncoderDecoder from "./Features/CodeAndDataTranslation/UTF8EncoderDec
 import UTMBuilderGenerator from "./Features/CodeAndDataTranslation/UTMBuilderGenerator";
 
 
+import ImageToolsLayout from "./Features/ImageTools/ImageToolsLayout";
+import AsciiArtGenerator from "./Features/ImageTools/AsciiArtGenerator";
+import ImageToTextConverter from "./Features/ImageTools/ImageToTextConverter";
+import JPGToPNGConverter from "./Features/ImageTools/JPGToPNGConverter";
+import JPGToWebPConverter from "./Features/ImageTools/JPGToWebPConverter";
+import PNGToJPGConverter from "./Features/ImageTools/PNGToJPGConverter";
+import PNGToWebPConverter from "./Features/ImageTools/PNGToWebPConverter"
+import SVGToPNGConverter from "./Features/ImageTools/SVGToPNGConverter";
+import WebPToJPGConverter from "./Features/ImageTools/WebPToJPGConverter";
+import WebPToPNGConverter from "./Features/ImageTools/WebPToPNGConverter";
+import RandomChoiceGenerator from "./Features/RandomGenerators/RandomChoiceGenerator";
+import RandomDateGenerator from "./Features/RandomGenerators/RandomDateGenerator";
+import RandomIPGenerator from "./Features/RandomGenerators/RandomIPGenerator";
+import RandomNumberGenerator from "./Features/RandomGenerators/RandomNumberGenerator";
+import RandomMonthGenerator from "./Features/RandomGenerators/RandomMonthGenerator";
+import RandomLetterGenerator from "./Features/RandomGenerators/RandomLetterGenerator";
+import StrongPasswordGenerator from "./Features/RandomGenerators/StrongPasswordGenerator";
+import NATOPhoneticAlphabetTranslator from "./Features/MiscTools/NATOPhoneticAlphabetTranslator";
+import OnlineSentenceCounter from "./Features/MiscTools/OnlineSentenceCounter";
+import RepeatTextGenerator from "./Features/MiscTools/RepeatTextGenerator";
+import RomanNumeralDateConverter from "./Features/MiscTools/RomanNumeralDateConverter";
+import SortWordsAlphabetically from "./Features/MiscTools/SortWordsAlphabetically";
+import TextReplacementTool from "./Features/MiscTools/TextReplacementTool";
 export {
     Home,
     Header,
@@ -55,7 +78,7 @@ export {
 
 
 
-// text modification
+    // text modification
     TextModificationLayout,
     BubbleTextGenerator,
     BoldTextGenerator,
@@ -87,7 +110,7 @@ export {
     ZalgoGlitchTextGenerator,
 
 
-// code and data translation
+    // code and data translation
     BinaryCodeTranslator,
     CsvToJsonConverter,
     HexToTextConverter,
@@ -99,5 +122,38 @@ export {
     SlugifyURLGenerator,
     UTMBuilderGenerator,
     UTF8EncoderDecoder,
-}
 
+
+    // image tools
+    ImageToolsLayout,
+    AsciiArtGenerator,
+    ImageToTextConverter,
+    JPGToPNGConverter,
+    JPGToWebPConverter,
+    PNGToJPGConverter,
+    PNGToWebPConverter,
+    SVGToPNGConverter,
+    WebPToJPGConverter,
+    WebPToPNGConverter,
+
+
+    // Random Generators
+    RandomChoiceGenerator,
+    RandomDateGenerator,
+    RandomIPGenerator,
+    RandomNumberGenerator,
+    RandomMonthGenerator,
+    RandomLetterGenerator,
+    StrongPasswordGenerator,
+
+
+    // Misc Tools
+    NATOPhoneticAlphabetTranslator,
+    OnlineSentenceCounter,
+    RepeatTextGenerator,
+    RomanNumeralDateConverter,
+    SortWordsAlphabetically,
+    TextReplacementTool,
+    
+    
+}

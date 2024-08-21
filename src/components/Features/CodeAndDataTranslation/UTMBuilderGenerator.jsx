@@ -19,8 +19,8 @@ function UTMBuilderGenerator() {
     return (
         <section className="my-8">
             <div className="px-4">
-                <h1 className="text center text-4xl my-4 md:text-6xl text-customGray font-bold">UTM Builder Generator</h1>
-                <p className="text-sm md:text-lg md:max-w-[60vw]">
+                <h1 className="text-center text-4xl my-4 md:text-6xl text-customGray font-bold">UTM Builder Generator</h1>
+                <p className="text-center text-sm md:text-lg">
                     Create UTM parameters for your URLs to track the effectiveness of your marketing campaigns.
                 </p>
             </div>
