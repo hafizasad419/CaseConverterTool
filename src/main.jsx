@@ -65,6 +65,7 @@ import {
   RomanNumeralDateConverter,
   SortWordsAlphabetically,
   TextReplacementTool,
+  OnlineNotepad,
 } from './components'
 
 
@@ -157,7 +158,7 @@ const router = createBrowserRouter(
       <Route path="misc-tools/roman-numeral-date-converter" element={<RomanNumeralDateConverter />} />
       <Route path="misc-tools/sort-words-alphabetically" element={<SortWordsAlphabetically />} />
       <Route path="misc-tools/text-replacement-tool" element={<TextReplacementTool />} />
-
+      <Route path="misc-tools/online-notepad" element={<OnlineNotepad />} />
     </Route>
   )
 )

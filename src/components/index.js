@@ -69,6 +69,7 @@ import RepeatTextGenerator from "./Features/MiscTools/RepeatTextGenerator";
 import RomanNumeralDateConverter from "./Features/MiscTools/RomanNumeralDateConverter";
 import SortWordsAlphabetically from "./Features/MiscTools/SortWordsAlphabetically";
 import TextReplacementTool from "./Features/MiscTools/TextReplacementTool";
+import OnlineNotepad from "./Features/MiscTools/OnlineNotepad";
 export {
     Home,
     Header,
@@ -154,6 +155,7 @@ export {
     RomanNumeralDateConverter,
     SortWordsAlphabetically,
     TextReplacementTool,
-    
+    OnlineNotepad,
+
     
 }

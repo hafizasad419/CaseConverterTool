@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { FaChevronDown, FaBars, FaTimes } from 'react-icons/fa'; // Import dropdown, hamburger, and close icons
-import { motion } from 'framer-motion'; // Import Framer Motion for smooth animations
-import { NavLink } from 'react-router-dom'; // Import NavLink for routing
+import { FaChevronDown, FaBars, FaTimes } from 'react-icons/fa'; 
+import { motion } from 'framer-motion'; 
+import { NavLink } from 'react-router-dom'; 
+import logo from "../../assets/logo/logoremovebg.png"
+import "../../css/Header.css"
 
 // Array of navbar items with their corresponding services and routes
 const navbarItems = [
@@ -121,7 +123,10 @@ const Header = () => {
     return (
         <nav className="bg-gradient-to-r from-[#313131] to-[#515151] text-white p-4 flex justify-between md:justify-evenly items-center py-8">
             <div className="text-2xl font-bold">
-                Syed Alam
+                <img 
+                className='w-24 md:w-40 absolute top-[-10px] md:top-[-34px] left-0'
+                src={logo} 
+                alt="convert text pro logo" />
             </div>
 
             {/* Hamburger icon for mobile */}
@@ -133,7 +138,9 @@ const Header = () => {
 
             {/* Navbar items */}
             <div className={`flex-col md:flex-row md:flex gap-4 items-center ${isMobileMenuOpen ? 'flex' : 'hidden'}`}>
-                <NavLink to={"/"}>
+                <NavLink
+                className={"hover:scale-110 duration-300"}
+                to={"/"}>
                     Convert Case
                 </NavLink>
 

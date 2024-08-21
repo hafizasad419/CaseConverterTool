@@ -1,0 +1,7 @@
+.logo {
+    width: 100px;
+    height: 100px;
+    background-color: black; /* Optional: Set background color to black if needed */
+    mask-image: url('../../src/assets/logo/logo.png');
+    mask-size: 100% 100%;
+  }
